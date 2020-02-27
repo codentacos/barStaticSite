@@ -115,10 +115,18 @@ Container Styles
     transform: translate(-50%, -50%);
 }
 
-ul li div img {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
+/* ----------------------
+Menu Styles
+---------------------- */
+
+.menu-ul {
+    align-self: center;
+    grid-area: menu;
+    margin: 15px 0;
+    line-height: 30px;
+    list-style-type: none;
+    padding-bottom: 60px;
+    padding-left: 0;
 }
 
 .collapsible {
@@ -133,20 +141,43 @@ ul li div img {
     font-size: 15px;
 }
 
-.menu-ul {
-    align-self: center;
-    grid-area: menu;
-    margin: 15px auto;
-    line-height: 30px;
-    list-style-type: none;
-    padding-bottom: 60px;
-    padding-left: 0;
+.menu-ul button {
+    background-color: #fff;
+    border: 1px solid black;
+    /* display: block; */
+    outline: none;
+    width: 100%;
 }
 
-ul li div {
-    border: 1px solid #000;
-    /* margin-left: 15px; */
+.menu-ul button img {
+    margin-left: 10px;
+    width: 15px;
 }
+
+ul li div img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu-ul p {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.menu-ul div {
+    background-color: black;
+    color: white;
+}
+
+.menu-ul p {
+    text-align: center;
+}
+
+
+/* ----------------------
+Footer Styles
+---------------------- */
 
 hr,
 .footer-content p {
@@ -160,14 +191,9 @@ hr,
 }
 
 footer {
-    /* justify-self: flex-end; */
     background-color: #fff;
     grid-area: footer;
-    /* position: absolute;
-    left: 0;
-    bottom: 0; */
     width: 100%;
-    /* z-index: 4; */
 }
 
 /* ----------------------
