@@ -146,6 +146,7 @@ Menu Styles
     border: 1px solid black;
     /* display: block; */
     outline: none;
+    padding: 5px 0;
     width: 100%;
 }
 
