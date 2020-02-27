@@ -88,7 +88,7 @@ Container Styles
 }
 
 .parallax-2 {
-    background: #fff;
+    background: #000;
     /* min-height: 100vh; */
     margin-top: 100vh;
     padding: 0;
@@ -97,6 +97,7 @@ Container Styles
 }
 
 .parallax-2 h2 {
+    color: #fff;
     font-size: 2em;
     font-weight: bold;
     text-align: center;
@@ -111,6 +112,7 @@ Container Styles
 }
 
 .parallax-2 .wrapper p {
+    color: #fff;
     font-size: 1.5em;
     line-height: 34px;
     margin: 10px auto 35px;
@@ -119,7 +121,7 @@ Container Styles
 
 .parallax-2 .wrapper img {
     display: block;
-    filter: invert(100%);
+    /* filter: invert(100%); */
     margin: 0 auto;
     width: 90%;
 }
@@ -129,7 +131,12 @@ hr,
     margin-bottom: 5px;
 }
 
+hr {
+    border-color: rgba(255,255,255,0.3);
+}
+
 .footer-content {
+    color: #fff;
     margin-left: 12px;
     text-align: center;
 }

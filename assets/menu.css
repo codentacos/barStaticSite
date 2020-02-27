@@ -8,9 +8,9 @@ body {
     width: 100%;
 }
 
-/* body {
+body {
     background-color: black;
-} */
+}
 
 main {
     display: flex;
@@ -144,15 +144,23 @@ Menu Styles
 }
 
 .menu-ul button {
-    background-color: #fff;
-    border: 1px solid black;
+    background-color: #000;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    color: white;
     /* display: block; */
     outline: none;
     padding: 5px 0;
     width: 100%;
 }
 
+#last {
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+}
+
 .menu-ul button img {
+    filter: invert(100%);
     margin-left: 10px;
     width: 15px;
 }
@@ -187,13 +195,18 @@ hr,
     margin-top: 0;
 }
 
+hr {
+    border-color: rgba(255,255,255, 0.3) !important;
+}
+
 .footer-content {
     margin-left: 12px;
     text-align: center;
 }
 
 footer {
-    background-color: #fff;
+    background-color: black;
+    color: white;
     grid-area: footer;
     width: 100%;
 }
@@ -261,7 +274,7 @@ Media Queries
     }
 
     .navbar-default .navbar-nav li a {
-        color: #000;
+        color: #fff;
         font-size: 1.2em;
     }
 
@@ -278,7 +291,7 @@ Media Queries
         font-size: 2em;
         line-height: 45px;
     }
-    
+
     footer {
         position: fixed;
         bottom: 0;
