@@ -8,6 +8,10 @@ body {
     width: 100%;
 }
 
+/* body {
+    background-color: black;
+} */
+
 main {
     display: flex;
     flex-direction: column;
@@ -89,7 +93,6 @@ Container Styles
     top: 0;
     left: 0;
     width: 100%;
-    /* z-index: 1; */
 }
 
 .header {
@@ -100,7 +103,6 @@ Container Styles
     grid-area: header;
     height: 100vh;
     padding: 0;
-    /* position: fixed; */
     width: 100%;
 }
 
@@ -175,7 +177,6 @@ ul li div img {
     text-align: center;
 }
 
-
 /* ----------------------
 Footer Styles
 ---------------------- */
@@ -202,24 +203,65 @@ Media Queries
 ---------------------- */
 
 @media (min-width: 769px) {
-    .wrapper {
-        width: 70%;
-    }
+    /* ----------------------
+    Container Styles
+    ---------------------- */
 
     .grid {
-        grid-column: repeat(2, 1fr);
-        grid-template-areas:
-            "left right"
-            "footer footer";
-        width: 100%;
+        position: absolute;
+    }
+
+    .header {
+        background-position: bottom;
+        height: calc(100vh - 56px);
+        position: fixed;
+        width: 50%;
+    }
+
+    .menu-container {
+        height: calc(100vh - 75px);
+        margin-top: 75px;
+        position: absolute;
+        overflow-y: scroll;
+        top: 0;
+        left: 50%;
+        width: 50%;
+    }
+
+    .menu-ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+    }
+
+    ul li div img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
     }
 
     /* ----------------------
     Nav Styles
     ---------------------- */
 
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 70%;
+    }
+
+    .navbar-collapse {
+        display: block;
+        margin: 0 auto;
+    }
+
     .navbar-default .navbar-nav li a {
-        color: #fff;
+        color: #000;
         font-size: 1.2em;
     }
 
@@ -229,11 +271,17 @@ Media Queries
     }
 
     /* ----------------------
-Container Styles
----------------------- */
+    Container Styles
+    ---------------------- */
 
     .right .wrapper p {
         font-size: 2em;
         line-height: 45px;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
     }
 }
